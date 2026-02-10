@@ -249,6 +249,47 @@ Passos:
 Resultados esperados: 
 O login será negado 
 Ira aparecer um indicador na parte superior da tela indicando o motivo da falha 
-Usuário será sugerido que crie sua conta no sistema
+Usuário será sugerido que crie sua conta no sistema 
+
+
+------CASOS NEGATIVOS------
+
+ID: CTN-LOGIN-001
+titulo: Falha na requisição ao back-end
+
+Pré-Condições: 
+Usuário pode esta cadatrado na plataforma ou não 
+Usuário deve digitar seus dados de login quando solicitado
+Acessar pagina de login 
+Navegadir Google Chrome aberto
+
+Passos: 
+1. Acessar página de acesso a plataforma 
+2. Usuário deve digitar seus dados de cadastro como "Email" e "senha" em seus respectivos campos
+3. clicar no botão de "Login"
+
+Resultados esperados: 
+O botão de "Login" ao ser pressioando e verificado que ouve um erro de comunicação com o backend, irá dispara um popup na tela indicando instabilidades na plataforma 
+A página de login sera recarregada manualmente, solcitando reinicio no processo de cadastro
+
+
+ID: CTN-LOGIN-002
+Titulo: Usuário cadatrado tem email ou senha incorretos
+
+Pré-condições: 
+Acesso a página de login
+Usuário já deve ter conta criada na plataforma
+Usuário adicionou dados de login incorretos
+Google chrome navegador aberto 
+
+Passos: 
+1. Acessar página de login da plataforma 
+2. Digitar e inserir dados de login na plataforma
+3. Clicar no botão de login 
+
+Resultado esperados: 
+Será indicado ao usuário que os seus dados de acesso não estão corretos por meio de um popup
+logo após vamos sugerir que ele faça alteração da sua senha e nova tentativar de login será iniciada
+
 
 
